@@ -1,0 +1,74 @@
+.c-login {
+  display: flex;
+  &__left {
+    width: 50%;
+    img {
+      height: calc(100vh - 98px) !important;
+    }
+  }
+  &__right {
+    margin-top: 112px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__rightContainer {
+    width: 432px;
+  }
+
+  &__upText {
+    text-align: center;
+
+    p {
+      &:first-child {
+        font-weight: 500;
+        font-size: 40px;
+      }
+      &:last-child {
+        font-size: 16px;
+      }
+    }
+  }
+
+  &__tab {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    margin: 50px 0 32px;
+
+    a {
+      width: 216px;
+      padding-bottom: 15px;
+      text-align: center;
+
+      &:first-child {
+        border-bottom: 2px solid #343131;
+      }
+
+      &:last-child {
+        border-bottom: 2px solid transparent;
+      }
+    }
+  }
+
+  &__button {
+    display: flex;
+    gap: 20px;
+  }
+
+  &__hr {
+    margin: 32px 0;
+    border-bottom: 1px solid #d1d1d1;
+  }
+
+  &__forgotPassword {
+    text-align: right;
+    margin: 12px 0 36px;
+    p {
+      font-weight: 500;
+      font-size: 12px;
+      color: #343131;
+    }
+  }
+}

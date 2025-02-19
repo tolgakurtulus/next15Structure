@@ -1,0 +1,15 @@
+.c-counterbutton {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 48px;
+  width: 125px;
+  border: 1px solid rgba(0, 0, 0, 0.54);
+  border-radius: 33px;
+  padding: 0 13px;
+
+  span {
+    cursor: pointer;
+    user-select: none;
+  }
+}

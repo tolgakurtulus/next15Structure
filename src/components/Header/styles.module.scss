@@ -1,0 +1,119 @@
+.c-header {
+  height: 98px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  &__container {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 24px;
+    max-width: 1152px;
+  }
+
+  &__left {
+    path {
+      fill: #ce7328;
+    }
+  }
+
+  &__mid {
+    display: flex;
+    gap: 32px;
+    position: relative;
+
+    p {
+      font-weight: 400;
+      font-size: 16px;
+      cursor: pointer;
+      padding-bottom: 5px;
+      border: 1px solid transparent;
+
+      &:hover {
+        border-bottom: 1px solid black;
+      }
+    }
+  }
+
+  &__right {
+    display: flex;
+    gap: 24px;
+    svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  svg {
+    cursor: pointer;
+  }
+}
+
+.c-nav {
+  position: absolute;
+  top: 98px;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(-10px);
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+
+  &--visible {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+
+  &__container {
+    width: 100%;
+    padding: 24px;
+    max-width: 1152px;
+    margin: 0 auto;
+  }
+
+  &__area {
+    margin-bottom: 60px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+
+    p {
+      font-weight: 500;
+      font-size: 20px;
+      margin-bottom: 20px;
+    }
+  }
+
+  &__itemArea {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    cursor: pointer;
+  }
+
+  &__item {
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 15px;
+    }
+
+    p {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-weight: 400;
+      font-size: 16px;
+      margin: 0;
+    }
+  }
+}

@@ -1,0 +1,23 @@
+.c-icon-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  width: 100%;
+  height: 40px;
+  border: 1px solid #343131;
+  border-radius: 64px;
+  cursor: pointer;
+
+  p {
+    font-weight: 500;
+    font-size: 14px;
+    color: #343131;
+  }
+
+  &.facebook {
+    path {
+      fill: #3975ea;
+    }
+  }
+}
